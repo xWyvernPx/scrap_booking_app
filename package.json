@@ -1,0 +1,29 @@
+{
+  "name": "craw_booking",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.ts"
+  },
+  "dependencies": {
+    "@types/selenium-webdriver": "^4.1.9",
+    "axios": "^1.2.1",
+    "cheerio": "^1.0.0-rc.12",
+    "jsdom": "^20.0.3",
+    "pg": "^8.8.0",
+    "pretty": "^2.0.0",
+    "reflect-metadata": "^0.1.13",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "selenium-webdriver": "^4.7.1",
+    "tsc": "^2.0.4",
+    "typeorm": "^0.3.11",
+    "typeorm-model-generator": "^0.4.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescipt": "^1.0.0"
+  }
+}
