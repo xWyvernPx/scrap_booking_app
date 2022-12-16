@@ -8,6 +8,6 @@
     "password": "123456",
     "database": "tripadvisor",
     "synchronize": false,
-    "entities": ["src/entities/*.ts"]
+    "entities": ["entities/*.ts"]
   }
 ]

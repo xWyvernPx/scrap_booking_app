@@ -9,6 +9,7 @@ import {
 } from "typeorm";
 import { HotelType } from "./HotelType";
 import { HotelReview } from "./HotelReview";
+import { Location } from "./Location";
 import { Photo } from "./Photo";
 
 @Index("hotel_pkey", ["id"], { unique: true })
@@ -53,6 +54,9 @@ export class Hotel {
 
   @OneToMany(() => HotelReview, (hotelReview) => hotelReview.hotel)
   hotelReviews: HotelReview[];
+
+  @OneToMany(() => Location, (location) => location.hotel)
+  locations: Location[];
 
   @OneToMany(() => Photo, (photo) => photo.hotel)
   photos: Photo[];
