@@ -10,5 +10,5 @@ export const getGeoCode = async (address: string) => {
     },
   });
   console.log(response.data);
-  return response.data?.items[0];
+  return response.data?.items?.[0];
 };
