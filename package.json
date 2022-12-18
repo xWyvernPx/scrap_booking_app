@@ -24,9 +24,11 @@
     "sequelize": "^6.27.0",
     "tsc": "^2.0.4",
     "typeorm": "^0.3.11",
-    "typeorm-model-generator": "^0.4.6"
+    "typeorm-model-generator": "^0.4.6",
+    "winston": "^3.8.2"
   },
   "devDependencies": {
+    "chromedriver": "^108.0.0",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1",
     "typescipt": "^1.0.0"

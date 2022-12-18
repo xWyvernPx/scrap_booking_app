@@ -13,7 +13,7 @@ export const getRandomType = async () => {
     types = await hotelTypeRepo.find();
   }
 
-  const random = Math.round(Math.random() * types.length);
+  const random = Math.round(Math.random() * (types.length - 1));
   console.log(random);
   return types[random];
 };

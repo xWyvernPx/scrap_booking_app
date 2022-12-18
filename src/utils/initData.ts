@@ -11,6 +11,8 @@ export const initData = async () => {
     "Campground",
   ];
   const repo = await HotelTypeRepository;
+  const types = await repo.find();
+  if (types.length > 0) return;
   type.forEach((el) => {
     const hotelType = new HotelType();
     hotelType.name = el;

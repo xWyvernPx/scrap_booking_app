@@ -1,6 +1,6 @@
-import { Browser, Builder, By, WebDriver } from "selenium-webdriver";
+import { Browser, Builder, By, until, WebDriver } from "selenium-webdriver";
 
-import { Options } from "selenium-webdriver/firefox";
+import { Options } from "selenium-webdriver/chrome";
 import ds from "../../datasource";
 import { Hotel } from "../../entities/Hotel";
 import { HotelType } from "../../entities/HotelType";
@@ -8,23 +8,29 @@ import { Location } from "../../entities/Location";
 import { getGeoCode } from "../utils/getGeocode";
 import { getRandomType } from "../utils/getRandomType";
 import { scrapHotelPhotos } from "./hotelImages";
+import { error, info } from "winston";
 export const HotelScrap = async (address: string) => {
   const ops = new Options();
   ops.windowSize({ width: 1920, height: 1080 });
   let driver = await new Builder()
-    .forBrowser(Browser.FIREFOX)
-    .setFirefoxOptions(ops)
+    .forBrowser(Browser.CHROME)
+    .setChromeOptions(ops)
     .build();
+  await driver.manage().setTimeouts({ implicit: 5000 });
   // await driver.switchTo().newWindow("tab");
 
   await driver.get(address);
   const hotelType: HotelType = await getRandomType();
 
-  const hotel_address = await driver
-    .findElement(By.css("span[class='fHvkI PTrfg']"))
-    .getText();
+  let hotel_address;
+  try {
+    hotel_address = await driver
+      .findElement(By.css("span[class='fHvkI PTrfg']"))
+      .getText();
+  } catch (e) {
+    error("Could not find hotel address");
+  }
 
-  const hotelName = await driver.findElement(By.css(".QdLfr.b.d.Pn")).getText();
   let phone_number;
   try {
     phone_number = await driver
@@ -32,9 +38,11 @@ export const HotelScrap = async (address: string) => {
         css: ".zNXea.NXOxh.NjUDn",
       })
       .getText();
-  } catch (error) {
+  } catch (e) {
+    error("Could not find hotel phone_number");
     phone_number = "";
   }
+
   // const url_hotel = await driver
   //   .findElement(By.css(".YnKZo.Ci.Wc._S.C.pInXB._S.ITocq.jNmfd"))
   //   .getAttribute("href");
@@ -45,22 +53,32 @@ export const HotelScrap = async (address: string) => {
         .findElement(By.css("svg[class='JXZuC d H0']"))
         .getAttribute("aria-label")
     ).split(" ")?.[0];
-  } catch (error) {
+  } catch (e) {
+    error("Could not find hotel class");
     hotelClass = "";
   }
   // const url_affilate = await driver
   //   .findElement(By.css(".YnKZo.Ci.Wc._S.C.pInXB._S.ITocq.NjUDn"))
   //   .getAttribute("href");
+  await driver.wait(until.elementLocated(By.css("div[class='fIrGe _T']")));
+
   const hotel_description = await driver
     .findElement(By.css("div[class='fIrGe _T']"))
     .getText();
-  const thumbnail = await (
-    await driver
-      .findElement(By.css(".CEZFh.s._U.xVnGc div div picture img"))
-      .getAttribute("srcset")
-  )
-    .split(",")
-    .pop();
+  let thumbnail;
+  try {
+    thumbnail = await (
+      await driver
+        .findElement(By.css(".CEZFh.s._U.xVnGc div div picture img"))
+        .getAttribute("srcset")
+    )
+      .split(",")
+      .pop();
+  } catch (e) {
+    error("couldn't find thumbnail");
+  }
+  await driver.wait(until.elementLocated(By.css(".QdLfr.b.d.Pn")));
+  const hotelName = await driver.findElement(By.css(".QdLfr.b.d.Pn")).getText();
   const hotel = new Hotel();
   hotel.name = hotelName;
   hotel.hotelType = hotelType;
@@ -111,7 +129,6 @@ export const HotelScrap = async (address: string) => {
     location.mapSouth = locationDetail?.mapView?.south || 0;
     location.hotel = hotel;
   }
-  // await scrapHotelPhotos(driver);
   if (hotel.locations) {
     hotel.locations = [...hotel?.locations, location];
   } else {
@@ -119,8 +136,11 @@ export const HotelScrap = async (address: string) => {
   }
   await ds.then(async (ds) => {
     // console.log(location);
-    await ds.manager.save(hotel);
+    const savedHotel = await ds.manager.save(hotel);
+    await scrapHotelPhotos(driver, savedHotel);
+
     await ds.manager.save(location);
+    info("SCRAPPING HOTEL || " + hotelName + "|| SUCCESSFULLY");
   });
   await driver.close();
 };
