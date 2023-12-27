@@ -1,15 +1,14 @@
-import { createConnection } from "typeorm";
-
-const ds = createConnection({
-  name: "default",
-  type: "postgres",
-  host: "localhost",
-  port: 5432,
-  username: "sa",
-  password: "123456",
-  database: "tripadvisor",
-  synchronize: false,
-  entities: ["entities/*.ts"],
-}).then((ds) => ds);
+import { DataSource } from "typeorm";
+const ds = new DataSource({
+  "name": "default",
+  "type": "postgres",
+  "host": "wyvernpserver.tech",
+  "port": 5432,
+  "username": "sa",
+  "password": "",
+  "database": "",
+  "synchronize": false,
+  "entities": ["entities/*.{js,ts}"]
+})
 
 export default ds;
