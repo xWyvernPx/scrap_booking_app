@@ -1,3 +1,20 @@
-import test  from  "./-3730078/Hotels/Hotels_links.json"
-
-console.log(test.length);
+import { config } from "dotenv";
+config()
+interface OverralLink {
+    link : string, 
+    typeCode : string,
+    typeName: string
+}
+async function importModule() {
+    try {
+       const links = (await import(`./dist/${process.env.CITY_ID}/links.json`)).default as OverralLink[];
+       links.forEach(l =>console.log(l.link)
+       )
+       
+    } catch (error) {
+        console.log(error);
+        
+       console.error('import failed');
+    }
+ }
+ importModule()

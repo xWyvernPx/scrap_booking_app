@@ -24,19 +24,30 @@ const scrapData = async () => {
   const ops = new Options();
   ops.windowSize({ width: 1920, height: 1080 });
   let driver = await new Builder().forBrowser(Browser.CHROME).build();
-
+  const directory = path.join("dist",process.env.CITY_ID);
+   if (!fs.existsSync(directory)) {
+     fs.mkdirSync(directory, { recursive: true });
+   }
+   const writeStream = fs.createWriteStream(
+     path.join(directory, `links.json`),
+     { flags: "w" }
+   );
+   writeStream.on("ready", () => {
+    writeStream.write("[");
+  });
+  writeStream.addListener("done",()=>{
+    writeStream.write("]");
+  })
   try {
     await driver.get(url);
     await driver.sleep(5000);
     await disableAd(driver);
 
     const accommodationTypes = await propertyTypeRetrieve(driver);
-    accommodationTypes.forEach(async (type) => {
+    
+    let isFirstWrite = true;
+   const tasks =  accommodationTypes.map(async (type) => {
       const typeName = Object.keys(category).find(k => category[k] === type)
-     const directory = path.join(process.env.CITY_ID, typeName);
-      if (!fs.existsSync(directory)) {
-        fs.mkdirSync(directory, { recursive: true });
-      }
 
       const PAGE_SIZE = 25;
       var offset = 0;
@@ -47,15 +58,10 @@ const scrapData = async () => {
       const maxProps = await getMaxProps(`${url}&${stringify(params)}`);
       console.log(`TYPE : ${typeName}, " MAX : ${maxProps}, \n url : ${url}&${stringify(params)} `);
       
-      const writeStream = fs.createWriteStream(
-        path.join(directory, `${typeName}_links.json`),
-        { flags: "w" }
-      );
-      writeStream.on("ready", () => {
-        writeStream.write("[");
-      });
+     
       
-      let isFirstWrite = true;
+      
+     
       while (offset <= maxProps) {
         const links = await retrieveHotelLinks(`${url}&${stringify(params)}`);
         links.forEach((l) => {
@@ -64,18 +70,23 @@ const scrapData = async () => {
           } else {
             isFirstWrite = false;
           }
-          writeStream.write(`${JSON.stringify(l)}\n`);
+          writeStream.write(`${JSON.stringify({
+            link: l,
+            typeCode: type,
+            typeName
+          })}\n`);
         });
         console.log(links);
 
         offset += PAGE_SIZE;
       }
-      writeStream.write("]");
-
+      
     });
+    await Promise.all(tasks)
   } catch (error) {
     console.log(error);
   } finally {
+    writeStream.emit("done");
     await driver.quit();
   }
 };
