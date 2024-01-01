@@ -15,16 +15,20 @@ import { getMaxProps } from "./src/@booking/common/utils";
 import { stringify } from "querystring";
 const { createConnection } = require("typeorm");
 import path from "path";
+import { delay } from "./extractHotelDetail";
 config();
 const url =
-  "https://www.booking.com/searchresults.html?aid=304142&label=gen173nr-1FCAIo9AFCAnZuSDNYBGj0AYgBAZgBMbgBF8gBDNgBAegBAfgBAogCAagCA7gCnr6wrAbAAgHSAiQzZWNkNjc2Yi1jMTc1LTRkMGItYTYxZi00YTg1N2ZlNmUyMDfYAgXgAgE&sid=fdf81d1e3bed80d1478b475c52c48ade&checkin=2024-03-01&checkout=2024-03-02&city=" +
-  process.env.CITY_ID;
+  `https://www.booking.com/searchresults.html?aid=304142&label=gen173nr-1FCAIo9AFCAnZuSDNYBGj0AYgBAZgBMbgBF8gBDNgBAegBAfgBAogCAagCA7gCnr6wrAbAAgHSAiQzZWNkNjc2Yi1jMTc1LTRkMGItYTYxZi00YTg1N2ZlNmUyMDfYAgXgAgE&sid=fdf81d1e3bed80d1478b475c52c48ade
+  &checkin=${process.env.START_DATE}
+  &checkout=${process.env.END_DATE}
+  &ss=${process.env.QUERY}`
+;
 
 const scrapData = async () => {
   const ops = new Options();
   ops.windowSize({ width: 1920, height: 1080 });
   let driver = await new Builder().forBrowser(Browser.CHROME).build();
-  const directory = path.join("dist",process.env.CITY_ID);
+  const directory = path.join("dist",process.env.QUERY);
    if (!fs.existsSync(directory)) {
      fs.mkdirSync(directory, { recursive: true });
    }
@@ -64,6 +68,7 @@ const scrapData = async () => {
      
       while (offset <= maxProps) {
         const links = await retrieveHotelLinks(`${url}&${stringify(params)}`);
+        await delay(500);
         links.forEach((l) => {
           if (!isFirstWrite) {
             writeStream.write(",");

@@ -1,0 +1,148 @@
+{
+    "title": "PETALS TOKYO - Floating Hotel",
+    "description": "You're eligible for a Genius discount at PETALS TOKYO - Floating Hotel! To save at this property, all you have to do is sign in.Surrounded by views of the river, PETALS TOKYO - Floating Hotel is a sustainable boat in Tokyo, offering guests an environmentally friendly accommodation close to Archi-Depot Museum. This 4-star boat offers a 24-hour front desk and full-day security. Free WiFi is available and private parking can be arranged at an extra charge.The boat will provide guests with air-conditioned units with a desk, a coffee machine, a fridge, a minibar, a safety deposit box, a flat-screen TV and a private bathroom with a bidet. The boat features some units that have a terrace, and all units come with a kettle. At the boat, each unit has bed linen and towels.Popular points of interest near the boat include Tennozu Park, Higashishinagawa Kaijo Park and Ebara Jinja Shrine. The nearest airport is Tokyo Haneda Airport, 8 km from PETALS TOKYO - Floating Hotel.",
+    "address": "140-0002 Tokyo-to, Shinagawa-ku Higashishinagawa 2-1, Japan",
+    "lat": "35.62238364",
+    "lng": "139.74705968",
+    "facilities": [
+       
+        {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M11.25.75v7.5a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-1.5 0zm4.031.914l-3.75 3h.938l-3.75-3a.75.75 0 1 0-.938 1.172l3.75 3a.75.75 0 0 0 .938 0l3.75-3a.75.75 0 1 0-.938-1.172zM1.883 7.024l6.495 3.75a.75.75 0 0 0 .75-1.299l-6.495-3.75a.75.75 0 1 0-.75 1.3zM4.69 3.99l.723 4.748.468-.812-4.473 1.748a.75.75 0 0 0 .546 1.398l4.473-1.748a.75.75 0 0 0 .468-.812l-.723-4.748a.75.75 0 1 0-1.482.226zM2.632 18.274l6.495-3.75a.75.75 0 1 0-.75-1.298l-6.495 3.75a.75.75 0 1 0 .75 1.299zm-1.224-3.948l4.473 1.748-.468-.812-.723 4.748a.75.75 0 0 0 1.482.226l.723-4.748a.75.75 0 0 0-.468-.812l-4.473-1.748a.75.75 0 0 0-.546 1.398zM12.75 23.25v-7.5a.75.75 0 0 0-1.5 0v7.5a.75.75 0 0 0 1.5 0zm-4.031-.914l3.75-3h-.938l3.75 3a.75.75 0 0 0 .937-1.172l-3.75-3a.75.75 0 0 0-.937 0l-3.75 3a.75.75 0 0 0 .938 1.172zm13.399-5.36l-6.495-3.75a.75.75 0 0 0-.75 1.298l6.495 3.75a.75.75 0 0 0 .75-1.299zm-2.807 3.034l-.724-4.748-.468.812 4.473-1.748a.75.75 0 0 0-.546-1.398l-4.473 1.748a.75.75 0 0 0-.468.812l.723 4.748a.75.75 0 0 0 1.483-.226zm2.057-14.285l-6.495 3.75a.75.75 0 0 0 .75 1.3l6.495-3.75a.75.75 0 0 0-.75-1.3zm1.224 3.95l-4.473-1.749.468.812.724-4.748a.75.75 0 0 0-1.483-.226l-.723 4.748a.75.75 0 0 0 .468.812l4.473 1.748a.75.75 0 0 0 .546-1.398zM11.625 7.6L8.377 9.475a.75.75 0 0 0-.375.65v3.75a.75.75 0 0 0 .375.65l3.248 1.874a.75.75 0 0 0 .75 0l3.248-1.875a.75.75 0 0 0 .375-.649v-3.75a.75.75 0 0 0-.375-.65L12.375 7.6a.75.75 0 0 0-.75 0zm.75 1.3h-.75l3.248 1.874-.375-.649v3.75l.375-.65-3.248 1.876h.75l-3.248-1.876.375.65v-3.75l-.375.65L12.375 8.9z\"></path></svg>",
+            "name": "Air conditioning"
+        },
+        {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M.75 24h22.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5zM24 2.25A2.25 2.25 0 0 0 21.75 0H4.5a2.25 2.25 0 0 0-2.25 2.25v6A2.25 2.25 0 0 0 4.5 10.5H12a.75.75 0 0 1 .75.75v12c0 .414.336.75.75.75h9.75a.75.75 0 0 0 .75-.75v-21zm-1.5 0v21l.75-.75H13.5l.75.75v-12A2.25 2.25 0 0 0 12 9H4.5a.75.75 0 0 1-.75-.75v-6a.75.75 0 0 1 .75-.75h17.25a.75.75 0 0 1 .75.75zM18.75 24h4.5a.75.75 0 0 0 .75-.75v-10.5a.75.75 0 0 0-.75-.75h-3A2.25 2.25 0 0 0 18 14.25v9c0 .414.336.75.75.75zm0-1.5l.75.75v-9a.75.75 0 0 1 .75-.75h3l-.75-.75v10.5l.75-.75h-4.5zM6 9.75v3a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 0-1.5 0zm2.25-4.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.5 0a2.25 2.25 0 1 0-4.5 0 2.25 2.25 0 0 0 4.5 0zm13.5-.75h-4.5a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5zm0 3h-4.5a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5zM2.344 18c0 .866.012 1.295.069 1.833C2.69 22.437 4.003 24 6.844 24c2.234 0 3.38-1.189 3.977-3.297.057-.203.11-.411.168-.66l.136-.599c.029-.126.054-.228.077-.32a1.5 1.5 0 0 0-1.454-1.874H3.094a.75.75 0 0 0-.75.75zm1.5 0l-.75.75h6.655c-.027.107-.054.22-.086.357l-.135.595c-.053.229-.1.415-.15.592-.434 1.53-1.085 2.206-2.534 2.206-1.97 0-2.736-.912-2.94-2.825-.05-.47-.06-.861-.06-1.675zm-.75-.75a3 3 0 0 0-3 3 .75.75 0 0 0 1.5 0 1.5 1.5 0 0 1 1.5-1.5.75.75 0 0 0 0-1.5z\"></path></svg>",
+            "name": "Tea/coffee maker in all rooms"
+        }
+    ],
+    "id": "6751789",
+    "url": "https://www.booking.com/hotel/jp/petals-tokyo.en-gb.html?label=gen173nr-1FCAIo9AFCAnZuSDNYBGj0AYgBAZgBMbgBF8gBDNgBAegBAfgBAogCAagCA7gCnr6wrAbAAgHSAiQzZWNkNjc2Yi1jMTc1LTRkMGItYTYxZi00YTg1N2ZlNmUyMDfYAgXgAgE&sid=fdf81d1e3bed80d1478b475c52c48ade++&aid=304142&ucfs=1&arphpl=1&checkin=2024-03-01&checkout=2024-03-02&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&nflt=ht_id%3D215&srpvid=483d6f9ca40800b0&srepoch=1704124346&all_sr_blocks=675178902_371280745_2_0_0&highlighted_blocks=675178902_371280745_2_0_0&matching_block_id=675178902_371280745_2_0_0&sr_pri_blocks=675178902_371280745_2_0_0__11010000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+    "features": {
+        "Bathroom": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12.75 15h10.5l-.74-.873-.664 3.986a5.25 5.25 0 0 1-5.179 4.387H7.333a5.25 5.25 0 0 1-5.18-4.387l-.663-3.986L.75 15h4.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0-.74.873l.664 3.986A6.75 6.75 0 0 0 7.334 24h9.333a6.75 6.75 0 0 0 6.659-5.64l.664-3.987a.75.75 0 0 0-.74-.873h-10.5a.75.75 0 0 0 0 1.5zM12 19.5H6v-5.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v5.25zm0 1.5a1.5 1.5 0 0 0 1.5-1.5v-5.25A2.25 2.25 0 0 0 11.25 12h-4.5a2.25 2.25 0 0 0-2.25 2.25v5.25A1.5 1.5 0 0 0 6 21h6zm4.5-17.25a2.25 2.25 0 0 1 4.5 0v10.5a.75.75 0 0 0 1.5 0V3.75a3.75 3.75 0 1 0-7.5 0 .75.75 0 0 0 1.5 0zm-3 3a2.25 2.25 0 0 1 4.5 0l.75-.75h-6l.75.75zm-1.5 0c0 .414.336.75.75.75h6a.75.75 0 0 0 .75-.75 3.75 3.75 0 1 0-7.5 0z\"></path></svg>",
+            "features": [
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Toilet paper",
+                    "additional_charge": false
+                },
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Towels",
+                    "additional_charge": false
+                },
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Bidet",
+                    "additional_charge": false
+                },
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Bath or shower",
+                    "additional_charge": false
+                },
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Slippers",
+                    "additional_charge": false
+                },
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Private bathroom",
+                    "additional_charge": false
+                },
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Toilet",
+                    "additional_charge": false
+                },
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Free toiletries",
+                    "additional_charge": false
+                },
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Bathrobe",
+                    "additional_charge": false
+                },
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Hairdryer",
+                    "additional_charge": false
+                },
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Shower",
+                    "additional_charge": false
+                }
+            ],
+            "note": ""
+        },
+        "Bedroom": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M2.75 12h18.5c.69 0 1.25.56 1.25 1.25V18l.75-.75H.75l.75.75v-4.75c0-.69.56-1.25 1.25-1.25zm0-1.5A2.75 2.75 0 0 0 0 13.25V18c0 .414.336.75.75.75h22.5A.75.75 0 0 0 24 18v-4.75a2.75 2.75 0 0 0-2.75-2.75H2.75zM0 18v3a.75.75 0 0 0 1.5 0v-3A.75.75 0 0 0 0 18zm22.5 0v3a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 0-1.5 0zm-.75-6.75V4.5a2.25 2.25 0 0 0-2.25-2.25h-15A2.25 2.25 0 0 0 2.25 4.5v6.75a.75.75 0 0 0 1.5 0V4.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 0 1.5 0zm-13.25-3h7a.25.25 0 0 1 .25.25v2.75l.75-.75h-9l.75.75V8.5a.25.25 0 0 1 .25-.25zm0-1.5A1.75 1.75 0 0 0 6.75 8.5v2.75c0 .414.336.75.75.75h9a.75.75 0 0 0 .75-.75V8.5a1.75 1.75 0 0 0-1.75-1.75h-7z\"></path></svg>",
+            "features": [
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Linen",
+                    "additional_charge": false
+                },
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Wardrobe or closet",
+                    "additional_charge": false
+                },
+                {
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z\"></path></svg>",
+                    "name": "Alarm clock",
+                    "additional_charge": false
+                }
+            ],
+            "note": ""
+        }
+    },
+    "rooms": [
+        {
+            "name": "King Room with Sea View",
+            "roomType": "675178902",
+            "basePrice": 18948709,
+            "description": "\n<div class=\"bed-types-wrapper\n\">\n<ul class=\"rt-bed-types\">\n<li class=\"rt-bed-type\">\n<span>\n1 extra-large double bed\n<i class=\"bicon bicon-double\"></i>\n</span>\n</li>\n</ul>\n</div>\n",
+            "noGuests": 2
+        },
+        {
+            "name": "Superior Twin Room with Sea View",
+            "roomType": "675178903",
+            "basePrice": 18948709,
+            "description": "\n<div class=\"bed-types-wrapper\n\">\n<ul class=\"rt-bed-types\">\n<li class=\"rt-bed-type\">\n<span>\n2 single beds\n<i class=\"bicon bicon-singles\"></i>\n</span>\n</li>\n</ul>\n</div>\n",
+            "noGuests": 2
+        },
+        {
+            "name": "King Room with Sea View",
+            "roomType": "675178905",
+            "basePrice": 19809231,
+            "description": "\n<div class=\"bed-types-wrapper\n\">\n<ul class=\"rt-bed-types\">\n<li class=\"rt-bed-type\">\n<span>\n1 extra-large double bed\n<i class=\"bicon bicon-double\"></i>\n</span>\n</li>\n</ul>\n</div>\n",
+            "noGuests": 2
+        },
+        {
+            "name": "King Room with Sea View",
+            "roomType": "675178901",
+            "basePrice": 19809231,
+            "description": "\n<div class=\"bed-types-wrapper\n\">\n<ul class=\"rt-bed-types\">\n<li class=\"rt-bed-type\">\n<span>\n1 extra-large double bed\n<i class=\"bicon bicon-double\"></i>\n</span>\n</li>\n</ul>\n</div>\n",
+            "noGuests": 2
+        }
+    ],
+    "images": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344659522.jpg?k=5c2ee721177331baa34e3466a0e6739865a17ae069125d9a10837f78139a78ff&o=&hp=1",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344659582.jpg?k=00b552aa432ef992865cd4bd5d5b622bda2629cc5a495ca207617db45cd4d3e8&o=&hp=1",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344660866.jpg?k=ccade33761d253e3ef8f1c331a43f35697f49f9cddc3d7685dc30f44acdcf22f&o=&hp=1",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344661328.jpg?k=9b6918b578adca2255a5db1223fb109cd921250278d1bfe0ce6c75c47a26283b&o=&hp=1",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344661741.jpg?k=0a74b27982a85a45a65b03e469c12c81f63ef9c7d09fb9fcbf848bbcb45386f1&o=&hp=1",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344661919.jpg?k=0d3f22d199261304dea0bf3cb5d2e11ed4c39226fdfc2431cbc5fc88366e87b9&o=&hp=1",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344661903.jpg?k=199c014bc5b4612d41dff1b17cae64ca7452958b4730e9c8f6855964da95fb6d&o=&hp=1",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344661925.jpg?k=eacc38940d31c70623e8f89498aa20486e5f4fe3d985ecb7a7f7595a7521e95f&o=&hp=1",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344662517.jpg?k=bf1ccffd5a75fb7f145c1207244d3d7b6dd488fe7e919c8857b2e3d55b7fa707&o=&hp=1",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344669454.jpg?k=155bc05437f9f6b9776b76c898e18b51f2013d6f30c33aa35c80fc3ec15cafb8&o=&hp=1"
+    ],
+    "typeCode": "215",
+    "typeName": "Boats"
+}

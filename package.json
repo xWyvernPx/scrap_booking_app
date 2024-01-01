@@ -4,31 +4,20 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node index.ts"
+    "get:link": "ts-node extractHotelLinkByCity.ts",
+    "get:accommodation": "ts-node extractHotelDetail.ts",
+    "start": "npm run get:link && get:accommodation"
   },
   "dependencies": {
     "@types/selenium-webdriver": "^4.1.9",
     "axios": "^1.6.2",
     "cheerio": "1.0.0-rc.12",
     "dotenv": "^16.3.1",
-    "global": "^4.4.0",
-    "jsdom": "^20.0.3",
     "pg": "^8.8.0",
-    "pg-generator": "^4.8.3",
-    "pg-generator-example": "^1.0.0",
-    "pg-hstore": "^2.3.4",
-    "pretty": "^2.0.0",
     "puppeteer": "^21.6.1",
     "querystring": "^0.2.1",
-    "reflect-metadata": "^0.1.13",
-    "request": "^2.88.2",
-    "request-promise": "^4.2.6",
     "selenium-webdriver": "^4.7.1",
-    "sequelize": "^6.27.0",
-    "tsc": "^2.0.4",
-    "typeorm": "^0.3.11",
-    "typeorm-model-generator": "^0.4.6",
-    "uuid": "^9.0.1"
+    "typeorm": "^0.3.11"
   },
   "devDependencies": {
     "@types/node": "^20.10.5",
